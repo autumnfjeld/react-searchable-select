@@ -60,7 +60,7 @@ class SearchSelectContainer extends Component {
 		const characterName = this.state.characterName;
 		const characterList = this.state.characterList;
         return (
-        	<div>
+        	<div className='search-select-container'>
 	            <CharacterInput 
 	                characterName={characterName} 
 	                handleChange={this.handleCharacterNameChange}
