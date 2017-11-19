@@ -12,7 +12,6 @@ class App extends Component {
                     </div>
                 </header> 
                 <div className='app-content'>
-                    <p> I love react apps and other babbling </p>
                 </div>
             </div>
     );
