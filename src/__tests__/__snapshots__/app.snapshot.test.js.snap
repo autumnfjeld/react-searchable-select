@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="app-container"
+>
+  <header
+    className="app-header"
+  >
+    <h1
+      className="app-title"
+    >
+      MARVEL
+    </h1>
+    <div>
+      <div
+        className="search-select-container"
+      >
+        <form>
+          <input
+            autoFocus={true}
+            className="character-search-input"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+        </form>
+        <div>
+          <p>
+             This is the list 
+          </p>
+          <ul />
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="app-content"
+  />
+</div>
+`;

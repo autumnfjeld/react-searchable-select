@@ -12,7 +12,6 @@ test('Jest is set up', () => {
 })
 
 describe('App rendering', () => {
-
 	test('renders without crashing', () => {
 	  	const div = document.createElement('div');
 	  	ReactDOM.render(<App />, div);
@@ -26,7 +25,6 @@ describe('App rendering', () => {
 	test('renders some child', () => {
  		const wrapper = mount(<App />);
  		const someChild = wrapper.find('.search-select-container');
- 		// const someChild = wrapper.find('<SearchContainer />');
     	expect(someChild.exists()).toBe(true);
     });
 
