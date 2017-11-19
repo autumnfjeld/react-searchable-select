@@ -1,0 +1,21 @@
+{
+  "name": "react-searchable-select",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "PORT=3033 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0"
+  }
+}
