@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CharacterInput from './CharacterInput';
-
+import SelectableResultList from './SelectableResultList';
+import testData from './__tests__/test-data.js'
 
 
 /**
@@ -9,21 +10,25 @@ import CharacterInput from './CharacterInput';
  * @extends React.Component
  */
 class SearchSelectContainer extends Component {
-
     constructor(props) {
         super(props);
         this.state = { 
-            characterName: ''
+            characterName: '',
+            characterList: []
         };
+
    		this.handleCharacterNameChange = this.handleCharacterNameChange.bind(this);        
     }	
 
 	handleCharacterNameChange(characterName) {
 	   	this.setState({'characterName': characterName});
+	   	// Dummy action
+	   	this.setState({'characterList': testData.results});
 	}  
 
     render() {
 		const characterName = this.state.characterName;
+		const characterList = this.state.characterList;
         return (
         	<div>
 	            <CharacterInput 
@@ -31,6 +36,9 @@ class SearchSelectContainer extends Component {
 	                handleChange={this.handleCharacterNameChange}
 	            />
 	            <p> Test input change: {characterName} </p>
+	            <SelectableResultList 
+	            	characterList={characterList}
+	            />
         	</div>
         )
     };	
