@@ -3,7 +3,7 @@ import axios from 'axios';
 import CharacterInput from './CharacterInput';
 import SelectableResultList from './SelectableResultList';
 
-
+//TODO add 'use strict'????
 /**
  * Class representing a component with input form and list
  * Holds state for children that share data
@@ -30,7 +30,7 @@ class SearchSelectContainer extends Component {
     componentDidUpdate(prevProps, prevState) {
         // TODO: if network connection is slow, handle timing....waste to fetch initial typing, wait for pause or ?
         if (prevState.characterName !== this.state.characterName) {
-            getCharacterList();
+            this.getCharacterList();
         }
     }	
 
