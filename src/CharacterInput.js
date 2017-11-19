@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 
 /**
- * Will hold state for children that share data
+ * Class representing input form
+ * @extends React.Component
  */
 class CharacterInput extends Component {
     constructor(props) {
         super(props);
+        this.handleInputChange = this.handleInputChange.bind(this);
+    }
+
+    handleInputChange(ev){
+        this.props.handleChange(ev.target.value);
     }
 
     render() {
@@ -15,6 +21,7 @@ class CharacterInput extends Component {
 	            <input 
 	                type="text" 
 	                value={characterName}
+	                onChange={this.handleInputChange}
 	                placeholder="Search"
 	                autoFocus
 	                className='character-search-input'
