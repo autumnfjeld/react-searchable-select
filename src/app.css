@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*--------------------------------------------------------------------------------------
+ * I have read enough to know this is not the 'React way' for styling.  In a larger app I would
+ * put each component in own folder with own sass file—and do more research on React best practices
+ * on styling.
+ *--------------------------------------------------------------------------------------*/
+/*----------------------------------------
+ *  Variables
+ *---------------------------------------*/
+/*----------------------------------------
+ *  Styling
+ *---------------------------------------*/
+body {
+  font-family: sans-serif;
+  margin: 0; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #b50f16; }
+  header .app-title {
+    width: 50%;
+    color: #fff; }
+
+.search-select-container {
+  position: relative; }
+  .search-select-container .character-search-input {
+    padding: 4px 6px;
+    border: 1px solid #e9ecef;
+    border-radius: 2px;
+    color: #495057; }
+  .search-select-container .result-list {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 2px;
+    position: absolute;
+    top: 28px;
+    right: 0; }
+
+.btn-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  cursor: pointer;
+  color: #495057; }
+  .btn-select .marvel-img-box {
+    margin-right: 10px; }
+    .btn-select .marvel-img-box .marvel-img {
+      width: 40px;
+      height: 40px;
+      max-width: 100%;
+      border-radius: 20px; }
+  .btn-select .marvel-name {
+    font-weight: bold; }
