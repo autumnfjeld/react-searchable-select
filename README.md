@@ -2,7 +2,7 @@
 This app was built in React.  The app allows a user to enter a marvel character name, and on initial input, pings the [marvel api](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0) and returns a list of characters matching the input.
 
 ###TODOs
-* Add spinner to indicate to user waiting for server response
+* DONE Add spinner to indicate to user waiting for server response
 * Add responsive styling
 * Put app on react-searchable-select.autumnfjeld.com
 * Add discussion section on all that I learned and roadblocks I hit (like testing!)
