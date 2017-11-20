@@ -5,10 +5,8 @@ import React from 'react';
  * @param {Object} props - props object passed from declaration in SearchSelectContainer
  */
 function SelectableResultList(props) {
-    // console.log('SearchResultsList-1 props', props);
-    if (props.characterList) {
-        return  <div>
-        			<p> This is the list </p>
+    if (props.characterList.length > 0) {
+        return  <div className='result-list'>
                     <ul>
                         {props.characterList.map((c, id) => (
                             <li key={id}>{c.name}</li>

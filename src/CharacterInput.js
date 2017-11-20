@@ -22,7 +22,7 @@ class CharacterInput extends Component {
 	                type="text" 
 	                value={characterName}
 	                onChange={this.handleInputChange}
-	                placeholder="Search"
+	                placeholder="Search.."
 	                autoFocus
 	                className='character-search-input'
 	            />
