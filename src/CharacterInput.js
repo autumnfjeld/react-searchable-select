@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// TODO: Add spinner in input box during server response wait
+
 /**
  * Class representing input form
  * @extends React.Component
