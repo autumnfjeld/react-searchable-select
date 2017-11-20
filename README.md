@@ -3,6 +3,7 @@ This app was built in React.  The app allows a user to enter a marvel character 
 
 ###TODOs
 * Add spinner to indicate to user waiting for server response
+* Add responsive styling
 * Put app on react-searchable-select.autumnfjeld.com
 * Add discussion section on all that I learned and roadblocks I hit (like testing!)
 
