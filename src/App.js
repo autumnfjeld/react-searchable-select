@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SearchSelectContainer from './SearchSelectContainer';
+import './app.css';
 
 class App extends Component {
     render() {

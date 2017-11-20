@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// TODO: Add spinner in input box during server response wait
+
 /**
  * Class representing input form
  * @extends React.Component
@@ -22,7 +24,7 @@ class CharacterInput extends Component {
 	                type="text" 
 	                value={characterName}
 	                onChange={this.handleInputChange}
-	                placeholder="Search"
+	                placeholder="Search.."
 	                autoFocus
 	                className='character-search-input'
 	            />

@@ -1,0 +1,94 @@
+/*--------------------------------------------------------------------------------------
+ * I have read enough to know this is not the 'React way' for styling.  In a larger app I would
+ * put each component in own folder with own sass file—and do more research on React best practices
+ * on styling.
+ *--------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------
+ *  Variables
+ *---------------------------------------*/
+
+// Taken from bootstrap4 
+// TODO prune after color decisions
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$marvel-red: #b50f16        // Red color taken from marvel.com
+
+$border-radius: 2px
+$marvel-img-diam: 40px
+
+/*----------------------------------------
+ *  Styling
+ *---------------------------------------*/
+
+// TODO RESPONSIVE! 
+
+// TODO get better font, similar to marvel
+body
+    font-family: sans-serif
+    margin: 0
+
+header
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    height: 80px
+    background-color: $marvel-red
+    
+    .app-title
+        width: 50%
+        color: $white
+
+.search-select-container
+    position: relative
+
+    .character-search-input
+        padding: 4px 6px
+        border: 1px solid $gray-200
+        border-radius: $border-radius
+        color: $gray-700
+
+    .result-list
+        background-color: $gray-100
+        border: 1px solid $gray-400
+        border-radius: $border-radius
+        position: absolute
+        top: 28px
+        right: 0
+
+.btn-select
+    display: flex
+    flex-direction: row
+    align-items: center
+    height: 60px
+    width: 250px
+    cursor: pointer
+    color: $gray-700
+
+    .marvel-img-box
+        margin-right: 10px
+    
+        .marvel-img
+            width: $marvel-img-diam
+            height: $marvel-img-diam
+            max-width: 100%
+            border-radius: $marvel-img-diam/2
+    
+    .marvel-name
+        font-weight: bold       //TODO use less pronounced font-weight
+
+
+
+
