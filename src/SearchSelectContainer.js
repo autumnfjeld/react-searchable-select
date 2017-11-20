@@ -14,7 +14,8 @@ class SearchSelectContainer extends Component {
         super(props);
         this.state = { 
             characterName: '',
-            characterList: []
+            characterList: [],
+            showSpinner: false
         };
 
    		this.handleCharacterNameChange = this.handleCharacterNameChange.bind(this);        
@@ -45,6 +46,7 @@ class SearchSelectContainer extends Component {
 	 * Calls the proxy server set up in api/index.js and sets state.characterList
 	 */
     getCharacterList() {
+    	this.setState({showSpinner: true});
     	// TODO: figure out better way to handle this = self
         var self = this;
         const url = 'http://localhost:1111/characters?nameStartsWith=' + this.state.characterName;
@@ -53,17 +55,20 @@ class SearchSelectContainer extends Component {
                 .then(res => {
                     const characterList = res.data.results;
                     self.setState({characterList});
+                    self.setState({showSpinner: false});
                 });        
     } 	
 
     render() {
 		const characterName = this.state.characterName;
 		const characterList = this.state.characterList;
+		const showSpinner = this.state.showSpinner;
         return (
         	<div className='search-select-container'>
 	            <CharacterInput 
 	                characterName={characterName} 
 	                handleChange={this.handleCharacterNameChange}
+	                showSpinner={showSpinner}
 	            />
 	            <SelectableResultList 
 	            	characterList={characterList}
