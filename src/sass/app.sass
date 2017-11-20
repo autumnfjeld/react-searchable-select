@@ -4,15 +4,6 @@
  * on styling.
  *--------------------------------------------------------------------------------------*/
 
-/*----------------------------------------
- *  Mixins
- *---------------------------------------*/
-
-// @mixin flex-row() 
-// 	display: flex
-// 	flex-direction: row
-// 	align-items: center
-// 	justify-content: center
 
 /*----------------------------------------
  *  Variables
@@ -32,9 +23,10 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 
-$marvel-red: #b50f16 		// Red color taken from marvel.com
+$marvel-red: #b50f16        // Red color taken from marvel.com
 
 $border-radius: 2px
+$marvel-img-diam: 40px
 
 /*----------------------------------------
  *  Styling
@@ -44,34 +36,59 @@ $border-radius: 2px
 
 // TODO get better font, similar to marvel
 body
-	font-family: sans-serif
-	margin: 0
+    font-family: sans-serif
+    margin: 0
 
 header
-	display: flex
-	flex-direction: row
-	align-items: center
-	justify-content: center
-	height: 90px
-	background-color: $marvel-red
-	.app-title
-		width: 50%
-		color: $white
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    height: 80px
+    background-color: $marvel-red
+    
+    .app-title
+        width: 50%
+        color: $white
 
 .search-select-container
-	position: relative
-	.character-search-input
-		padding: 4px 6px
-		border: 1px solid $gray-200
-		border-radius: $border-radius
+    position: relative
 
-	.result-list
-		background-color: $gray-100
-		border: 1px solid $gray-400
-		border-radius: $border-radius
-		position: absolute
-		top: 28px
-		right: 0
-		width: 200px
+    .character-search-input
+        padding: 4px 6px
+        border: 1px solid $gray-200
+        border-radius: $border-radius
+        color: $gray-700
+
+    .result-list
+        background-color: $gray-100
+        border: 1px solid $gray-400
+        border-radius: $border-radius
+        position: absolute
+        top: 28px
+        right: 0
+
+.btn-select
+    display: flex
+    flex-direction: row
+    align-items: center
+    height: 60px
+    width: 250px
+    cursor: pointer
+    color: $gray-700
+
+    .marvel-img-box
+        margin-right: 10px
+    
+        .marvel-img
+            width: $marvel-img-diam
+            height: $marvel-img-diam
+            max-width: 100%
+            border-radius: $marvel-img-diam/2
+    
+    .marvel-name
+        font-weight: bold       //TODO use less pronounced font-weight
+
+
 
 
