@@ -35,11 +35,13 @@ function SelectListItem(props) {
  * @param {Object} props - props object passed from declaration in SearchSelectContainer
  */
 function SelectableResultList(props) {
-    if (props.characterList.length > 0) {
-        return  <div className='result-list'>
-                    {props.characterList.map((c, id) => (
-                        <SelectListItem key={id} character={c} />
-                    ))}
+    if (props.characterList && props.characterList.length > 0) {
+        return  <div className='result-list-box'>
+                    <div className='result-list-scroll'>
+                        {props.characterList.map((c, id) => (
+                            <SelectListItem key={id} character={c} />
+                        ))}
+                    </div>
                 </div>
     } else {
         return null;
