@@ -4,6 +4,14 @@
  * on styling.
  *--------------------------------------------------------------------------------------*/
 
+/*----------------------------------------
+ * TODO TODO TODO TODO TODO TODO
+ * 1. RESPONSIVE! 
+ * 2. cross-browser with autoprefixer
+ * 3. Find better font, similar to marvel
+ *---------------------------------------*/
+
+
 
 /*----------------------------------------
  *  Variables
@@ -32,9 +40,7 @@ $marvel-img-diam: 40px
  *  Styling
  *---------------------------------------*/
 
-// TODO RESPONSIVE! 
 
-// TODO get better font, similar to marvel
 body
     font-family: sans-serif
     margin: 0
@@ -53,12 +59,36 @@ header
 
 .search-select-container
     position: relative
+    
+    form
+        position: relative
 
     .character-search-input
         padding: 4px 6px
         border: 1px solid $gray-200
         border-radius: $border-radius
         color: $gray-700
+
+    // Spinner not identical to provided images in https://github.com/hireupau/frontend-assessment, but was a quick implementation from previous work I did
+    .spinner 
+        position: relative
+        content: ''
+        box-sizing: border-box
+        position: absolute
+        top: 6px
+        right: 8px
+        width: 12px
+        height: 12px
+        border-radius: 50%
+        border: 1px solid $gray-600
+        border-top-color: #ffffff
+        animation: spinner .9s linear infinite   
+
+    @keyframes spinner
+        0%
+            transform: rotate(0deg)
+        100%
+            transform: rotate(360deg)         
 
     .result-list
         background-color: $gray-100

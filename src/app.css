@@ -5,6 +5,12 @@
  * on styling.
  *--------------------------------------------------------------------------------------*/
 /*----------------------------------------
+ * TODO TODO TODO TODO TODO TODO
+ * 1. RESPONSIVE!
+ * 2. cross-browser with autoprefixer
+ * 3. Find better font, similar to marvel
+ *---------------------------------------*/
+/*----------------------------------------
  *  Variables
  *---------------------------------------*/
 /*----------------------------------------
@@ -27,11 +33,32 @@ header {
 
 .search-select-container {
   position: relative; }
+  .search-select-container form {
+    position: relative; }
   .search-select-container .character-search-input {
     padding: 4px 6px;
     border: 1px solid #e9ecef;
     border-radius: 2px;
     color: #495057; }
+  .search-select-container .spinner {
+    position: relative;
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #868e96;
+    border-top-color: #ffffff;
+    animation: spinner .9s linear infinite; }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
   .search-select-container .result-list {
     background-color: #f8f9fa;
     border: 1px solid #ced4da;

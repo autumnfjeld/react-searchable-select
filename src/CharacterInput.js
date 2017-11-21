@@ -18,16 +18,19 @@ class CharacterInput extends Component {
 
     render() {
         const characterName = this.props.characterName;
+        const spinnerClass = this.props.showSpinner ? 'spinner' : '';
         return (
 	         <form>
 	            <input 
-	                type="text" 
+	                type='text' 
 	                value={characterName}
 	                onChange={this.handleInputChange}
-	                placeholder="Search.."
+	                placeholder='Search..'
 	                autoFocus
 	                className='character-search-input'
 	            />
+                <div className={spinnerClass}>
+                </div>                  
 	        </form>
     	);
   	}
