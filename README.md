@@ -1,5 +1,5 @@
 # A Searchable Select App for Marvel Characters
-This app was built in React.  The app allows a user to enter a marvel character name, and on initial input, pings the [marvel api](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0) and returns a list of characters matching the input.
+This app was built in React.  The app allows a user to enter a marvel character name, and on initial input, pings the [marvel api](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0) and returns a list of characters matching the input.  Check it out at [react-searchselect.autumnfjeld.com](http://react-searchselect.autumnfjeld.com.s3-website-ap-southeast-2.amazonaws.com)
 
 ###TODOs
 * DONE Add spinner to indicate to user waiting for server response
