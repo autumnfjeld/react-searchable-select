@@ -21,17 +21,14 @@ exports[`App renders correctly 1`] = `
             autoFocus={true}
             className="character-search-input"
             onChange={[Function]}
-            placeholder="Search"
+            placeholder="Search.."
             type="text"
             value=""
           />
+          <div
+            className=""
+          />
         </form>
-        <div>
-          <p>
-             This is the list 
-          </p>
-          <ul />
-        </div>
       </div>
     </div>
   </header>
@@ -50,16 +47,13 @@ exports[`SearchSelectContainer renders correctly 1`] = `
       autoFocus={true}
       className="character-search-input"
       onChange={[Function]}
-      placeholder="Search"
+      placeholder="Search.."
       type="text"
       value=""
     />
+    <div
+      className=""
+    />
   </form>
-  <div>
-    <p>
-       This is the list 
-    </p>
-    <ul />
-  </div>
 </div>
 `;
