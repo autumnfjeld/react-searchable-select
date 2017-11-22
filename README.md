@@ -1,10 +1,12 @@
 # A Searchable Select App for Marvel Characters
-This app was built in React.  The app allows a user to enter a marvel character name, and on initial input, pings the [marvel api](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0) and returns a list of characters matching the input.  Check it out at [react-searchselect.autumnfjeld.com](http://react-searchselect.autumnfjeld.com.s3-website-ap-southeast-2.amazonaws.com)
+This app was built in React.  The app allows a user to enter a marvel character name, and on initial input, pings the [marvel api](https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0) and returns a list of characters matching the input.  
+
+Check it out at [react-searchselect.autumnfjeld.com](http://react-searchselect.autumnfjeld.com)
 
 ###TODOs
-* DONE Add spinner to indicate to user waiting for server response
+* DONE ~~Add spinner to indicate to user waiting for server response~~
 * Add responsive styling
-* Put app on react-searchable-select.autumnfjeld.com
+* DONE ~~Put app on react-searchable-select.autumnfjeld.com~~
 * Add discussion section on all that I learned and roadblocks I hit (like testing!)
 
 ### Development Environment
@@ -29,7 +31,7 @@ Tests are in src/__tests__ and can be run from root directory with `npm test`.
 This app provides and example of communication between React components. It demonstrates the React principle of ['lifting up state'](https://reactjs.org/docs/lifting-state-up.html), in which multiple components share data that is managed by a single parent. The parent maintains the React state and passes data and callbacks to the child components via the `props` object.
  
 ### Discussion
-* TODO: add more detail
+* TODO: add more detail here
 * First react app!!! Yippee!
 * Testing docs all over the place, seemed more difficult than necessary to grasp basic testing syntax
 * Loved the React structure, modularity, clean organziation
