@@ -19,31 +19,33 @@
 
 // Taken from bootstrap4 
 // TODO prune after color decisions
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #868e96;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
+$white:    #fff
+$gray-100: #f8f9fa
+$gray-200: #e9ecef
+$gray-300: #dee2e6
+$gray-400: #ced4da
+$gray-500: #adb5bd
+$gray-600: #868e96
+$gray-700: #495057
+$gray-800: #343a40
+$gray-900: #212529
+$black:    #000
 
-$marvel-red: #b50f16        // Red color taken from marvel.com
+$marvel-red: #f0141e        // Red color taken from marvel.com
 
 $border-radius: 2px
 $marvel-img-diam: 34px
-$btn-select-height: 50px;
+$btn-select-height: 50px
+$input-height: 30px
 
 /*----------------------------------------
  *  Styling
  *---------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400')
 
 body
-    font-family: sans-serif
+    font-family: Roboto sans-serif
     margin: 0
 
 header
@@ -51,12 +53,14 @@ header
     flex-direction: row
     align-items: center
     justify-content: center
-    height: 70px
+    height: 76px
     background-color: $marvel-red
-    
-    .app-title
+
+    .marvel-brand
         width: 50%
-        color: $white
+
+        .marvel-svg-box
+            width: 92px
 
 .search-select-container
     position: relative
@@ -65,20 +69,20 @@ header
         position: relative
 
     .character-search-input
-        padding: 6px 6px
-        font-size: 12px
+        width: 196px
+        padding: 0 10px
+        font-size: 10px
+        line-height: $input-height
         border: 1px solid $gray-200
         border-radius: $border-radius
         color: $gray-700
 
     // Spinner not identical to provided images in https://github.com/hireupau/frontend-assessment, but was a quick implementation from previous work I did
     .spinner 
-        position: relative
-        content: ''
         box-sizing: border-box
         position: absolute
-        top: 6px
-        right: 8px
+        top: 10px
+        right: 10px
         width: 12px
         height: 12px
         border-radius: 50%
