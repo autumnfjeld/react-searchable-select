@@ -1,6 +1,7 @@
 {
   "name": "react-searchable-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "homepage": "http://react-searchselect.autumnfjeld.com",
   "private": true,
   "dependencies": {
     "axios": "^0.17.0",
