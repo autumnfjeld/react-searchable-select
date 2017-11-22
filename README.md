@@ -3,11 +3,13 @@ This app was built in React.  The app allows a user to enter a marvel character 
 
 Check it out at [react-searchselect.autumnfjeld.com](http://react-searchselect.autumnfjeld.com)
 
-###TODOs
+This app is not related to Marvel, just an exercise in React and design implementation. 
+
+### TODOs
 * DONE ~~Add spinner to indicate to user waiting for server response~~
 * Add responsive styling
 * DONE ~~Put app on react-searchable-select.autumnfjeld.com~~
-* Add discussion section on all that I learned and roadblocks I hit (like testing!)
+* Could always add more... ~~Add discussion section on all that I learned and roadblocks I hit (like testing!)~~
 
 ### Development Environment
 * Mac OS X Sierra (version 10.12.6)
@@ -31,10 +33,9 @@ Tests are in src/__tests__ and can be run from root directory with `npm test`.
 This app provides and example of communication between React components. It demonstrates the React principle of ['lifting up state'](https://reactjs.org/docs/lifting-state-up.html), in which multiple components share data that is managed by a single parent. The parent maintains the React state and passes data and callbacks to the child components via the `props` object.
  
 ### Discussion
-* TODO: add more detail here
-* First react app!!! Yippee!
-* Testing docs all over the place, seemed more difficult than necessary to grasp basic testing syntax
-* Loved the React structure, modularity, clean organziation
+* This is my first react app, so that is very exciting!  I really likethe React structure, modularity, and clean organziation.  It reminds me of Angular directives (when they are done correctly)
+* Testing docs found on online are all over the place, seemed more difficult than necessary to grasp basic testing syntax
+* Very curious to know how the scrollbar was implemented in the guidelines stated for this project. My implementation is CSS only and I could not figure out how to set the scrollbar within the scrollable div. During my search for info on custom scrollbars I found [RocketScroll](https://github.com/Stanko/rocketScroll) which could be used to mimic perfectly the images provided in the project guidelines.
 
 ##### How to use
 Enter a charcater name in the input field to ping the Marvel api and get a list of matching Marvel characters.
