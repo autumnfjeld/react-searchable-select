@@ -6,10 +6,10 @@ Check it out at [react-searchselect.autumnfjeld.com](http://react-searchselect.a
 This app is not related to Marvel, just an exercise in React and design implementation. 
 
 ### TODOs
+* Set up AWS Gateway API with lamba function to run marvel proxy server
 * DONE ~~Add spinner to indicate to user waiting for server response~~
 * Add responsive styling
 * DONE ~~Put app on react-searchable-select.autumnfjeld.com~~
-* Could always add more... ~~Add discussion section on all that I learned and roadblocks I hit (like testing!)~~
 
 ### Development Environment
 * Mac OS X Sierra (version 10.12.6)
