@@ -11,7 +11,11 @@
  * 3. Find better font, similar to marvel
  *---------------------------------------*/
 
+/*----------------------------------------
+ *  Font
+ *---------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400&text=Hello')
 
 /*----------------------------------------
  *  Variables
@@ -39,18 +43,48 @@ $btn-select-height: 50px
 $input-height: 30px
 
 /*----------------------------------------
- *  Styling
+ *  Root markup: resets, font, structure
  *---------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400')
-
-body
-    font-family: Roboto sans-serif
+html, body, #root, .app-container
+    height: 100%
     margin: 0
 
-header
+body
+    font-family: 'Roboto', sans-serif
+    color: $gray-700
+    a
+        text-decoration: none
+        color: blue
+
+.app-container, header, .app-content, footer
     display: flex
+    flex-direction: column
+
+header
     flex-direction: row
+
+.app-container
+    justify-content: flex-start
+    align-items: stretch
+    align-content: stretch
+
+    .app-content, footer
+        align-items: center
+        justify-content: center
+        
+    .app-content
+        flex: 1
+
+    footer
+        height: 150px
+        padding-bottom: 20px
+
+/*----------------------------------------
+ *  Header
+ *---------------------------------------*/
+
+header
     align-items: center
     justify-content: center
     height: 76px
@@ -108,7 +142,7 @@ header
 
         // This is not the solution for the scrollbar show in the repo images, but an attempt until I figure it out.  
         //    Maybe try https://github.com/Stanko/rocketScroll
-        //    So curious to know how it can be done
+        //    Very curious to know if there is a pure-CSS solution
         .result-list-scroll
             height: $btn-select-height*5 - 2px  // Hacky but avoids double bottom line
             overflow-y: scroll
@@ -150,5 +184,13 @@ header
             font-weight: bold       //TODO use less pronounced font-weight
 
 
-
+/*----------------------------------------
+ *  App Content
+ *---------------------------------------*/
+footer
+    p 
+        text-align: center
+        width: 90%
+        max-width: 440px      
+        font-size: 10px
 

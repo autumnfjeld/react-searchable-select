@@ -11,19 +11,50 @@
  * 3. Find better font, similar to marvel
  *---------------------------------------*/
 /*----------------------------------------
+ *  Font
+ *---------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400&text=Hello");
+/*----------------------------------------
  *  Variables
  *---------------------------------------*/
 /*----------------------------------------
- *  Styling
+ *  Root markup: resets, font, structure
  *---------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
-body {
-  font-family: Roboto sans-serif;
+html, body, #root, .app-container {
+  height: 100%;
   margin: 0; }
 
-header {
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #495057; }
+  body a {
+    text-decoration: none;
+    color: blue; }
+
+.app-container, header, .app-content, footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column; }
+
+header {
+  flex-direction: row; }
+
+.app-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch; }
+  .app-container .app-content, .app-container footer {
+    align-items: center;
+    justify-content: center; }
+  .app-container .app-content {
+    flex: 1; }
+  .app-container footer {
+    height: 150px;
+    padding-bottom: 20px; }
+
+/*----------------------------------------
+ *  Header
+ *---------------------------------------*/
+header {
   align-items: center;
   justify-content: center;
   height: 76px;
@@ -106,3 +137,12 @@ header {
         border-radius: 17px; }
     .search-select-container .btn-select .marvel-name {
       font-weight: bold; }
+
+/*----------------------------------------
+ *  App Content
+ *---------------------------------------*/
+footer p {
+  text-align: center;
+  width: 90%;
+  max-width: 440px;
+  font-size: 10px; }
