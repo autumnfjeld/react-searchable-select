@@ -5,8 +5,9 @@ import SelectableResultList from './SelectableResultList';
 
 //TODO add 'use strict'????
 /**
- * Class representing a component with input form and list
- * Holds state for children that share data
+ * Container Component for input search field and selectable list. Holds state for children that share data.
+ * Container Components source the data and deal with state. State is then passed to Presentational Components as props
+ *  and is then rendered into views.
  * @extends React.Component
  */
 class SearchSelectContainer extends Component {

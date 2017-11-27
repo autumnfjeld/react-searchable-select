@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 /**
  * A stateless component for a single character
  * @param {Object} props object passed from SelectableResultList
